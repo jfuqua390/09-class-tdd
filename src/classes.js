@@ -40,4 +40,13 @@ class Lion extends Cat {
   }
 }
 
-console.log(Lion.size);
+// console.log(Lion.size);
+
+
+class KeepSecret {
+  constructor(secret) {
+    this.squeal = function() {
+      return secret;
+    }
+  }
+}
