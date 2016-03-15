@@ -22,7 +22,11 @@ var garfield = new Cat;
 
 
 class FacelessMan {
+  constructor(name) {
+    this.name = name;
+  }
+}
 
-};
+var aMan = new FacelessMan(`Jaqen H'ghar`);
 
-var aMan = new FacelessMan;
+// console.log(aMan.name);
