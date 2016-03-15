@@ -1,3 +1,5 @@
+'use strict'
+
 class Foo {
 
 };
@@ -12,8 +14,15 @@ class Dog {
 
 class Cat {
   growl() {
-    return `growl`;
+    return `meow`;
   }
 }
 
 var garfield = new Cat;
+
+
+class FacelessMan {
+
+};
+
+var aMan = new FacelessMan;
