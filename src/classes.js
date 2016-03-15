@@ -50,3 +50,28 @@ class KeepSecret {
     }
   }
 }
+
+class Key {
+  constructor() {
+
+  }
+}
+
+class Safe {
+  constructor (secret, key) {
+    this.unlock = function (x) {
+      if (x === key) {
+        return secret;
+      } else {
+        return 0;
+      }
+    }
+    }
+  }
+
+  const sensitive = "shhhhh!";
+  const rightKey  = new Key();
+  const wrongKey  = new Key();
+  const safe      = new Safe(sensitive, rightKey);
+
+  console.log(safe.unlock());
